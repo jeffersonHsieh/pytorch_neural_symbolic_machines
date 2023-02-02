@@ -1,7 +1,7 @@
 {
     "parser": "vanilla",
     "actor_use_table_bert_proxy":  false,
-    "table_bert_model_or_config": "bert-base-uncased",
+    "table_bert_model_or_config": "/workspace/hsiehcc/TaBERT/tabert_large_k3/model.bin",
     "column_representation": "mean_pool_column_name",
     "table_representation": "canonical",
     "content_snapshot_strategy": "synthetic_row",

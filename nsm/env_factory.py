@@ -473,8 +473,8 @@ class QAProgrammingEnv(Environment):
                                     [self.id_feature_dict[a] for a in valid_actions])
         self.obs = [self.start_ob]
 
-    def interactive(self):
-        self.interpreter.interactive()
+    def interactive(self, assisted=False):
+        self.interpreter.interactive(assisted=assisted) #debug
         print('reward is: %s' % self.score_fn(self.interpreter))
 
     def clone(self):

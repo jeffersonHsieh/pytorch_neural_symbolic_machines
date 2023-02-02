@@ -247,6 +247,7 @@ class LispInterpreter(object):
         elif x[0] == 'define':  # (define name exp)
             (_, name, exp) = x
             obj = self._eval(exp, namespace)
+            print(name,obj) #debug
             namespace[name] = obj
             return obj
         else:

@@ -215,7 +215,7 @@ class SimpleKGExecutor(Executor):
             valid_tks = tokens
         return valid_tks
 
-    def autocomplete_argm(self, exp, tokens, token_vals, debug=False):
+    def autocomplete_argm(self, exp, tokens, token_vals, debug=True):
         l = len(exp)
         token_vals = [x['value'] for x in token_vals]
         if l == 1:  # first argument has more than one entity.
